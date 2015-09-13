@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     assert_in_range("server port", server_port, 0, 65535);
     assert_in_range("number of bursts", num_bursts, 1, MAX_NUM_BURSTS);
     assert_in_range("burst iteration delay", burst_delay, 0, MAX_BURST_DELAY);
-    assert_in_range("payload length", payload_len, 0, 65467);
+    assert_in_range("payload length", payload_len, 0, ECHOMAX-48);
 
     // set up CNT-C catcher
     signal(SIGINT, cntc);

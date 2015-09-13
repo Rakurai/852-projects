@@ -22,9 +22,9 @@
 #include <unistd.h>     /* for close() */
 
 
-#define ECHOMAX 10000     /* Longest string to echo */
+#define ECHOMAX 65535     /* Longest string to echo */
 #define MAX_NUM_BURSTS 10000
-#define MAX_BURST_DELAY 10000
+#define MAX_BURST_DELAY 1000
 
 #ifndef LINUX
 #define INADDR_NONE  0xffffffff

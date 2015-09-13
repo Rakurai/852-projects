@@ -2,19 +2,19 @@
 
 # for BSD
 #OSFLAG = -DBSD
-#LIBS = 
+#LIBS =
 #LINKFLAGS  =
-#IFLAGS= 
+#IFLAGS=
 
 # for SOLARIS
 #OSFLAG = -DSOLARIS
-#LIBS = 
+#LIBS =
 #LINKFLAGS = -lsocket -lnsl
-#IFLAGS= 
+#IFLAGS=
 
 # for Linux
 OSFLAG = -DLINUX
-LIBS = 
+LIBS =
 LINKFLAGS =
 #IFLAGS= -I/usr/include/linux
 
@@ -24,12 +24,10 @@ LINKOPTIONS = -o
 
 
 CC = gcc
-CFLAGS = -c -ggdb -O2 -Wall $(OSFLAG) $(IFLAGS)
+CFLAGS = -std=gnu99 -c -ggdb -O2 -Wall $(OSFLAG) $(IFLAGS)
 CPLUS = g++
 CPLUSFLAGS = -c -ggdb -O2 -Wall $(OSFLAG)
 
 
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
-
-

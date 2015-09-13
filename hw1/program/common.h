@@ -30,6 +30,15 @@
 #define INADDR_NONE  0xffffffff
 #endif
 
+typedef struct burst_protocol_header_st {
+    uint16_t test_type;
+    uint16_t message_type;
+    uint32_t payload_len;
+    uint32_t burst_num;
+    uint32_t seq_num;
+    uint32_t burst_len;
+} burst_protocol_header_t;
+
 void DieWithError(char *errorMessage);  /* External error handling function */
 
 int stopping = 0;

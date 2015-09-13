@@ -231,6 +231,9 @@ void free_burst_data(vector_t *burst_data_vector) {
 	for (int burst_num = 0; burst_num < burst_data_vector->size; burst_num++) {
 		burst_data_t *bd = (burst_data_t *)vector_get(burst_data_vector, burst_num);
 
+		if (!bd)
+			continue;
+
 		for (int message_num = 0; message_num < bd->burst_len; message_num++) {
 			message_data_t *md = (message_data_t *)vector_get(&bd->messages, message_num);
 

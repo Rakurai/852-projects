@@ -18,7 +18,7 @@
 #include "protocol.h"
 
 void usage() {
-	fprintf(stderr, "usage:\n  client <server IP> <port> <num_bursts> <iteration delay> [payload size]\n");
+	fprintf(stderr, "usage:\n  client <server IP> <port> <num_bursts> <iteration delay> [payload size] [burst_size]\n");
 	exit(1);
 }
 

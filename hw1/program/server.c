@@ -65,9 +65,9 @@ int main(int argc, char *argv[])
     // print output
     printf("\nbursts detected: %d\n", num_bursts);
     printf("messages received: %d / %d\n", analysis_results.total_messages_received, analysis_results.total_messages_expected);
-    printf("overall loss rate: %f%%\n", total_loss_rate);
-    printf("buffer capacity sample mean: %f\n", buffer_capacity_sample_mean);
-    printf("bottleneck bandwidth sample mean: %f\n", bottleneck_bandwidth_sample_mean);
+    printf("overall loss rate: %0.2f%%\n", total_loss_rate);
+    printf("buffer capacity sample mean: %0.2f bytes\n", buffer_capacity_sample_mean);
+    printf("bottleneck bandwidth sample mean: %0.2f Mb/s\n", bottleneck_bandwidth_sample_mean * 8 / 1000000);
 
 	return 0;
 }
@@ -207,12 +207,13 @@ void analyze_packets(vector_t *burst_data_vector, test_parameters_t *test_parame
 				latest = &message->arrival;
 
 			// calculate bytes on the wire
-			unsigned short num_frames = message->payload_len / 1472 + 1;
-			bytes_received += num_frames * 42 + message->payload_len;
+			unsigned int message_bytes = sizeof(burst_protocol_header_t) + message->payload_len;
+			unsigned short num_frames = message_bytes / 1472 + message_bytes % 1472 ? 1 : 0;
+			bytes_received += num_frames * 42 + message_bytes;
 		}
 
 		unsigned int buffer_capacity = message_num;
-		stats_add(&analysis_results->buffer_capacity_stats, buffer_capacity);
+		stats_add(&analysis_results->buffer_capacity_stats, bytes_received);
 
 		// calculate bottleneck bandwidth for this burst
 		struct timeval time_diff;
@@ -220,8 +221,8 @@ void analyze_packets(vector_t *burst_data_vector, test_parameters_t *test_parame
 		double time_float = time_diff.tv_sec + time_diff.tv_usec / 1000000.0;
 		double bottleneck_bandwidth = bytes_received / time_float;
 
-		printf("burst %d: %d/%d received, buffer cap %d, bandwidth %f B/s\n",
-			burst_num, received, bd->burst_len, buffer_capacity, bottleneck_bandwidth);
+		printf("burst %d: %d/%d received, buffer cap %d msgs (%d bytes), bandwidth %f Mb/s\n",
+			burst_num, received, bd->burst_len, buffer_capacity, bytes_received, bottleneck_bandwidth*8/1000000);
 
 		stats_add(&analysis_results->bottleneck_bandwidth_stats, bottleneck_bandwidth);
 	}

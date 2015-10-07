@@ -1,0 +1,308 @@
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),     3200 bytes total ( 28.83 MB/s),    50 messages (    3200 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),     3840 bytes total (  8.14 MB/s),    60 messages (    3840 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),     4608 bytes total (  5.49 MB/s),    72 messages (    4608 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),     5504 bytes total (  5.57 MB/s),    86 messages (    5504 bytes) buffer size
+burst   5:   103/  103 received (  0.00% loss),     6592 bytes total (  5.61 MB/s),   103 messages (    6592 bytes) buffer size
+burst   6:   123/  123 received (  0.00% loss),     7872 bytes total (  7.62 MB/s),   123 messages (    7872 bytes) buffer size
+burst   7:   147/  147 received (  0.00% loss),     9408 bytes total (  9.58 MB/s),   147 messages (    9408 bytes) buffer size
+burst   8:   176/  176 received (  0.00% loss),    11264 bytes total (  8.33 MB/s),   176 messages (   11264 bytes) buffer size
+burst   9:   211/  211 received (  0.00% loss),    13504 bytes total (  8.54 MB/s),   211 messages (   13504 bytes) buffer size
+burst  10:   253/  253 received (  0.00% loss),    16192 bytes total ( 18.34 MB/s),   253 messages (   16192 bytes) buffer size
+burst  11:   284/  303 received (  6.27% loss),    18176 bytes total (  9.94 MB/s),   284 messages (   18176 bytes) buffer size
+burst  12:   330/  363 received (  9.09% loss),    21120 bytes total (  9.14 MB/s),   330 messages (   21120 bytes) buffer size
+burst  13:   318/  435 received ( 26.90% loss),    20352 bytes total (  8.23 MB/s),   318 messages (   20352 bytes) buffer size
+burst  14:   368/  522 received ( 29.50% loss),    23552 bytes total (  7.35 MB/s),   368 messages (   23552 bytes) buffer size
+burst  15:   368/  626 received ( 41.21% loss),    23552 bytes total (  7.04 MB/s),   368 messages (   23552 bytes) buffer size
+burst  16:   698/  751 received (  7.06% loss),    44672 bytes total (  8.01 MB/s),   528 messages (   33792 bytes) buffer size
+burst  17:   712/  901 received ( 20.98% loss),    45568 bytes total ( 15.32 MB/s),   317 messages (   20288 bytes) buffer size
+burst  18:   467/ 1081 received ( 56.80% loss),    29888 bytes total (  6.65 MB/s),   467 messages (   29888 bytes) buffer size
+burst  19:  1297/ 1297 received (  0.00% loss),    83008 bytes total ( 10.70 MB/s),  1297 messages (   83008 bytes) buffer size
+burst  20:   810/ 1556 received ( 47.94% loss),    51840 bytes total (  6.49 MB/s),   299 messages (   19136 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 9.75 MB/s. (stddev = 5.49)
+Sample mean of the bottleneck buffer size is: 18742.40 bytes. (stddev = 17501.34)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),     6400 bytes total ( 80.00 MB/s),    50 messages (    6400 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),     7680 bytes total ( 38.21 MB/s),    60 messages (    7680 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),     9216 bytes total ( 50.64 MB/s),    72 messages (    9216 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),    11008 bytes total ( 38.22 MB/s),    86 messages (   11008 bytes) buffer size
+burst   5:   103/  103 received (  0.00% loss),    13184 bytes total ( 37.89 MB/s),   103 messages (   13184 bytes) buffer size
+burst   6:   123/  123 received (  0.00% loss),    15744 bytes total ( 38.03 MB/s),   123 messages (   15744 bytes) buffer size
+burst   7:   147/  147 received (  0.00% loss),    18816 bytes total ( 50.99 MB/s),   147 messages (   18816 bytes) buffer size
+burst   8:   176/  176 received (  0.00% loss),    22528 bytes total ( 37.80 MB/s),   176 messages (   22528 bytes) buffer size
+burst   9:   211/  211 received (  0.00% loss),    27008 bytes total ( 25.08 MB/s),   211 messages (   27008 bytes) buffer size
+burst  10:   253/  253 received (  0.00% loss),    32384 bytes total ( 20.46 MB/s),   253 messages (   32384 bytes) buffer size
+burst  11:   303/  303 received (  0.00% loss),    38784 bytes total ( 18.90 MB/s),   303 messages (   38784 bytes) buffer size
+burst  12:   289/  363 received ( 20.39% loss),    36992 bytes total ( 18.17 MB/s),   289 messages (   36992 bytes) buffer size
+burst  13:   333/  435 received ( 23.45% loss),    42624 bytes total ( 16.72 MB/s),   333 messages (   42624 bytes) buffer size
+burst  14:   394/  522 received ( 24.52% loss),    50432 bytes total ( 15.26 MB/s),   394 messages (   50432 bytes) buffer size
+burst  15:   438/  626 received ( 30.03% loss),    56064 bytes total ( 14.30 MB/s),   438 messages (   56064 bytes) buffer size
+burst  16:   598/  751 received ( 20.37% loss),    76544 bytes total ( 18.93 MB/s),   598 messages (   76544 bytes) buffer size
+burst  17:   735/  901 received ( 18.42% loss),    94080 bytes total ( 20.55 MB/s),   431 messages (   55168 bytes) buffer size
+burst  18:   531/ 1081 received ( 50.88% loss),    67968 bytes total ( 15.36 MB/s),   531 messages (   67968 bytes) buffer size
+burst  19:  1142/ 1297 received ( 11.95% loss),   146176 bytes total ( 15.84 MB/s),   963 messages (  123264 bytes) buffer size
+burst  20:   371/ 1556 received ( 76.16% loss),    47488 bytes total (  9.01 MB/s),   371 messages (   47488 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 29.02 MB/s. (stddev = 17.40)
+Sample mean of the bottleneck buffer size is: 37964.80 bytes. (stddev = 28917.46)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),    12800 bytes total (160.00 MB/s),    50 messages (   12800 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),    15360 bytes total ( 75.67 MB/s),    60 messages (   15360 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),    18432 bytes total (145.13 MB/s),    72 messages (   18432 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),    22016 bytes total ( 75.92 MB/s),    86 messages (   22016 bytes) buffer size
+burst   5:   103/  103 received (  0.00% loss),    26368 bytes total (149.82 MB/s),   103 messages (   26368 bytes) buffer size
+burst   6:   123/  123 received (  0.00% loss),    31488 bytes total ( 56.43 MB/s),   123 messages (   31488 bytes) buffer size
+burst   7:   147/  147 received (  0.00% loss),    37632 bytes total ( 75.57 MB/s),   147 messages (   37632 bytes) buffer size
+burst   8:   167/  176 received (  5.11% loss),    42752 bytes total (143.46 MB/s),   167 messages (   42752 bytes) buffer size
+burst   9:   167/  211 received ( 20.85% loss),    42752 bytes total ( 75.27 MB/s),   167 messages (   42752 bytes) buffer size
+burst  10:   167/  253 received ( 33.99% loss),    42752 bytes total ( 75.53 MB/s),   167 messages (   42752 bytes) buffer size
+burst  11:   176/  303 received ( 41.91% loss),    45056 bytes total ( 32.70 MB/s),   176 messages (   45056 bytes) buffer size
+burst  12:   363/  363 received (  0.00% loss),    92928 bytes total ( 32.13 MB/s),   363 messages (   92928 bytes) buffer size
+burst  13:   167/  435 received ( 61.61% loss),    42752 bytes total ( 75.40 MB/s),   167 messages (   42752 bytes) buffer size
+burst  14:   451/  522 received ( 13.60% loss),   115456 bytes total ( 25.93 MB/s),   451 messages (  115456 bytes) buffer size
+burst  15:   291/  626 received ( 53.51% loss),    74496 bytes total ( 24.66 MB/s),   291 messages (   74496 bytes) buffer size
+burst  16:   592/  751 received ( 21.17% loss),   151552 bytes total ( 27.28 MB/s),   592 messages (  151552 bytes) buffer size
+burst  17:   333/  901 received ( 63.04% loss),    85248 bytes total ( 20.50 MB/s),   333 messages (   85248 bytes) buffer size
+burst  18:   880/ 1081 received ( 18.59% loss),   225280 bytes total ( 28.44 MB/s),   880 messages (  225280 bytes) buffer size
+burst  19:   546/ 1297 received ( 57.90% loss),   139776 bytes total ( 24.70 MB/s),   546 messages (  139776 bytes) buffer size
+burst  20:   794/ 1556 received ( 48.97% loss),   203264 bytes total ( 24.73 MB/s),   794 messages (  203264 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 67.46 MB/s. (stddev = 47.40)
+Sample mean of the bottleneck buffer size is: 73408.00 bytes. (stddev = 62932.16)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),    25600 bytes total (248.54 MB/s),    50 messages (   25600 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),    30720 bytes total (151.33 MB/s),    60 messages (   30720 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),    36864 bytes total (149.85 MB/s),    72 messages (   36864 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),    44032 bytes total (150.79 MB/s),    86 messages (   44032 bytes) buffer size
+burst   5:   103/  103 received (  0.00% loss),    52736 bytes total (151.11 MB/s),   103 messages (   52736 bytes) buffer size
+burst   6:   123/  123 received (  0.00% loss),    62976 bytes total (142.80 MB/s),   123 messages (   62976 bytes) buffer size
+burst   7:   147/  147 received (  0.00% loss),    75264 bytes total (149.63 MB/s),   147 messages (   75264 bytes) buffer size
+burst   8:   176/  176 received (  0.00% loss),    90112 bytes total ( 85.25 MB/s),   176 messages (   90112 bytes) buffer size
+burst   9:   167/  211 received ( 20.85% loss),    85504 bytes total (149.48 MB/s),   167 messages (   85504 bytes) buffer size
+burst  10:   253/  253 received (  0.00% loss),   129536 bytes total ( 49.20 MB/s),   253 messages (  129536 bytes) buffer size
+burst  11:   167/  303 received ( 44.88% loss),    85504 bytes total (145.66 MB/s),   167 messages (   85504 bytes) buffer size
+burst  12:   363/  363 received (  0.00% loss),   185856 bytes total (100.52 MB/s),   363 messages (  185856 bytes) buffer size
+burst  13:   298/  435 received ( 31.49% loss),   152576 bytes total ( 57.25 MB/s),   298 messages (  152576 bytes) buffer size
+burst  14:   353/  522 received ( 32.38% loss),   180736 bytes total ( 50.94 MB/s),   353 messages (  180736 bytes) buffer size
+burst  15:   405/  626 received ( 35.30% loss),   207360 bytes total ( 49.89 MB/s),   405 messages (  207360 bytes) buffer size
+burst  16:   671/  751 received ( 10.65% loss),   343552 bytes total ( 63.18 MB/s),   458 messages (  234496 bytes) buffer size
+burst  17:   286/  901 received ( 68.26% loss),   146432 bytes total ( 38.36 MB/s),   286 messages (  146432 bytes) buffer size
+burst  18:   899/ 1081 received ( 16.84% loss),   460288 bytes total ( 56.90 MB/s),   899 messages (  460288 bytes) buffer size
+burst  19:   677/ 1297 received ( 47.80% loss),   346624 bytes total ( 53.49 MB/s),   374 messages (  191488 bytes) buffer size
+burst  20:   567/ 1556 received ( 63.56% loss),   290304 bytes total ( 42.23 MB/s),   567 messages (  290304 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 104.32 MB/s. (stddev = 57.53)
+Sample mean of the bottleneck buffer size is: 138419.20 bytes. (stddev = 106711.14)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),    51200 bytes total (616.87 MB/s),    50 messages (   51200 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),    61440 bytes total (295.38 MB/s),    60 messages (   61440 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),    73728 bytes total (294.91 MB/s),    72 messages (   73728 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),    88064 bytes total (224.65 MB/s),    86 messages (   88064 bytes) buffer size
+burst   5:    93/  103 received (  9.71% loss),    95232 bytes total (538.03 MB/s),    93 messages (   95232 bytes) buffer size
+burst   6:    93/  123 received ( 24.39% loss),    95232 bytes total (293.02 MB/s),    93 messages (   95232 bytes) buffer size
+burst   7:    93/  147 received ( 36.73% loss),    95232 bytes total (294.84 MB/s),    93 messages (   95232 bytes) buffer size
+burst   8:    96/  176 received ( 45.45% loss),    98304 bytes total (119.01 MB/s),    96 messages (   98304 bytes) buffer size
+burst   9:   211/  211 received (  0.00% loss),   216064 bytes total (102.40 MB/s),   211 messages (  216064 bytes) buffer size
+burst  10:   141/  253 received ( 44.27% loss),   144384 bytes total (136.47 MB/s),   141 messages (  144384 bytes) buffer size
+burst  11:   237/  303 received ( 21.78% loss),   242688 bytes total (101.76 MB/s),   237 messages (  242688 bytes) buffer size
+burst  12:   217/  363 received ( 40.22% loss),   222208 bytes total (127.71 MB/s),   217 messages (  222208 bytes) buffer size
+burst  13:   280/  435 received ( 35.63% loss),   286720 bytes total ( 91.81 MB/s),   280 messages (  286720 bytes) buffer size
+burst  14:   273/  522 received ( 47.70% loss),   279552 bytes total ( 84.43 MB/s),   273 messages (  279552 bytes) buffer size
+burst  15:   418/  626 received ( 33.23% loss),   428032 bytes total ( 93.54 MB/s),   418 messages (  428032 bytes) buffer size
+burst  16:   582/  751 received ( 22.50% loss),   595968 bytes total (110.47 MB/s),   319 messages (  326656 bytes) buffer size
+burst  17:   206/  901 received ( 77.14% loss),   210944 bytes total ( 58.21 MB/s),   206 messages (  210944 bytes) buffer size
+burst  18:   998/ 1081 received (  7.68% loss),  1021952 bytes total (112.87 MB/s),   998 messages ( 1021952 bytes) buffer size
+burst  19:   632/ 1297 received ( 51.27% loss),   647168 bytes total ( 89.97 MB/s),   197 messages (  201728 bytes) buffer size
+burst  20:   496/ 1556 received ( 68.12% loss),   507904 bytes total ( 76.08 MB/s),   496 messages (  507904 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 193.12 MB/s. (stddev = 155.26)
+Sample mean of the bottleneck buffer size is: 237363.20 bytes. (stddev = 222811.47)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),    64000 bytes total (744.19 MB/s),    50 messages (   64000 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),    76800 bytes total (303.56 MB/s),    60 messages (   76800 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),    92160 bytes total (368.64 MB/s),    72 messages (   92160 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),   110080 bytes total (334.59 MB/s),    86 messages (  110080 bytes) buffer size
+burst   5:    93/  103 received (  9.71% loss),   119040 bytes total (654.07 MB/s),    93 messages (  119040 bytes) buffer size
+burst   6:    93/  123 received ( 24.39% loss),   119040 bytes total (366.28 MB/s),    93 messages (  119040 bytes) buffer size
+burst   7:    93/  147 received ( 36.73% loss),   119040 bytes total (636.58 MB/s),    93 messages (  119040 bytes) buffer size
+burst   8:   156/  176 received ( 11.36% loss),   199680 bytes total (243.22 MB/s),   156 messages (  199680 bytes) buffer size
+burst   9:   151/  211 received ( 28.44% loss),   193280 bytes total (137.08 MB/s),   151 messages (  193280 bytes) buffer size
+burst  10:   243/  253 received (  3.95% loss),   311040 bytes total (133.84 MB/s),   243 messages (  311040 bytes) buffer size
+burst  11:   171/  303 received ( 43.56% loss),   218880 bytes total (118.83 MB/s),   171 messages (  218880 bytes) buffer size
+burst  12:   281/  363 received ( 22.59% loss),   359680 bytes total (122.09 MB/s),   281 messages (  359680 bytes) buffer size
+burst  13:   244/  435 received ( 43.91% loss),   312320 bytes total (110.01 MB/s),   244 messages (  312320 bytes) buffer size
+burst  14:   349/  522 received ( 33.14% loss),   446720 bytes total (113.38 MB/s),   349 messages (  446720 bytes) buffer size
+burst  15:   365/  626 received ( 41.69% loss),   467200 bytes total (111.93 MB/s),   365 messages (  467200 bytes) buffer size
+burst  16:   578/  751 received ( 23.04% loss),   739840 bytes total (135.80 MB/s),   399 messages (  510720 bytes) buffer size
+burst  17:   205/  901 received ( 77.25% loss),   262400 bytes total ( 69.95 MB/s),   205 messages (  262400 bytes) buffer size
+burst  18:  1081/ 1081 received (  0.00% loss),  1383680 bytes total (225.65 MB/s),  1081 messages ( 1383680 bytes) buffer size
+burst  19:   350/ 1297 received ( 73.01% loss),   448000 bytes total ( 82.47 MB/s),   350 messages (  448000 bytes) buffer size
+burst  20:   986/ 1556 received ( 36.63% loss),  1262080 bytes total (107.85 MB/s),   986 messages ( 1262080 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 256.00 MB/s. (stddev = 205.88)
+Sample mean of the bottleneck buffer size is: 353792.00 bytes. (stddev = 360860.22)
+burst 0 sent, 50 messages
+burst 1 sent, 60 messages
+burst 2 sent, 72 messages
+burst 3 sent, 86 messages
+burst 4 sent, 103 messages
+burst 5 sent, 123 messages
+burst 6 sent, 147 messages
+burst 7 sent, 176 messages
+burst 8 sent, 211 messages
+burst 9 sent, 253 messages
+burst 10 sent, 303 messages
+burst 11 sent, 363 messages
+burst 12 sent, 435 messages
+burst 13 sent, 522 messages
+burst 14 sent, 626 messages
+burst 15 sent, 751 messages
+burst 16 sent, 901 messages
+burst 17 sent, 1081 messages
+burst 18 sent, 1297 messages
+burst 19 sent, 1556 messages
+
+Total of 20 bursts sent, totalling 9116 messages
+burst   1:    50/   50 received (  0.00% loss),    75700 bytes total (912.05 MB/s),    50 messages (   75700 bytes) buffer size
+burst   2:    60/   60 received (  0.00% loss),    90840 bytes total (432.57 MB/s),    60 messages (   90840 bytes) buffer size
+burst   3:    72/   72 received (  0.00% loss),   109008 bytes total (349.38 MB/s),    72 messages (  109008 bytes) buffer size
+burst   4:    86/   86 received (  0.00% loss),   130204 bytes total (432.57 MB/s),    86 messages (  130204 bytes) buffer size
+burst   5:    93/  103 received (  9.71% loss),   140802 bytes total (858.55 MB/s),    93 messages (  140802 bytes) buffer size
+burst   6:    93/  123 received ( 24.39% loss),   140802 bytes total (433.24 MB/s),    93 messages (  140802 bytes) buffer size
+burst   7:    93/  147 received ( 36.73% loss),   140802 bytes total (433.24 MB/s),    93 messages (  140802 bytes) buffer size
+burst   8:    93/  176 received ( 47.16% loss),   140802 bytes total (433.24 MB/s),    93 messages (  140802 bytes) buffer size
+burst   9:   211/  211 received (  0.00% loss),   319454 bytes total (151.33 MB/s),   211 messages (  319454 bytes) buffer size
+burst  10:   176/  253 received ( 30.43% loss),   266464 bytes total (153.14 MB/s),   176 messages (  266464 bytes) buffer size
+burst  11:   242/  303 received ( 20.13% loss),   366388 bytes total (149.91 MB/s),   242 messages (  366388 bytes) buffer size
+burst  12:   201/  363 received ( 44.63% loss),   304314 bytes total (134.06 MB/s),   201 messages (  304314 bytes) buffer size
+burst  13:   315/  435 received ( 27.59% loss),   476910 bytes total (138.27 MB/s),   315 messages (  476910 bytes) buffer size
+burst  14:   254/  522 received ( 51.34% loss),   384556 bytes total (136.85 MB/s),   254 messages (  384556 bytes) buffer size
+burst  15:   375/  626 received ( 40.10% loss),   567750 bytes total (130.64 MB/s),   375 messages (  567750 bytes) buffer size
+burst  16:   389/  751 received ( 48.20% loss),   588946 bytes total (126.06 MB/s),   389 messages (  588946 bytes) buffer size
+burst  17:   516/  901 received ( 42.73% loss),   781224 bytes total (136.96 MB/s),   516 messages (  781224 bytes) buffer size
+burst  18:   414/ 1081 received ( 61.70% loss),   626796 bytes total (116.16 MB/s),   414 messages (  626796 bytes) buffer size
+burst  19:  1006/ 1297 received ( 22.44% loss),  1523084 bytes total (248.14 MB/s),  1006 messages ( 1523084 bytes) buffer size
+burst  20:   696/ 1556 received ( 55.27% loss),  1053744 bytes total (129.17 MB/s),   299 messages (  452686 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 301.78 MB/s. (stddev = 237.87)
+Sample mean of the bottleneck buffer size is: 381376.60 bytes. (stddev = 339153.39)

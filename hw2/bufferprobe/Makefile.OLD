@@ -5,8 +5,8 @@ PROGS =	 client server
 OPTIONS = -DUNIX  -DANSI
 
 
-COBJECTS =	DieWithError.o
-CSOURCES =	DieWithError.c
+#COBJECTS =	DieWithError.o
+#CSOURCES =	DieWithError.c
 
 CPLUSOBJECTS =
 
@@ -18,13 +18,13 @@ all:	${PROGS}
 
 
 client:		client.o $(CPLUSOBJECTS) $(COBJECTS) $(LIBS) $(COMMONSOURCES) $(SOURCES)
-		${CC} ${LINKOPTIONS}  $@ client.o $(CPLUSOBJECTS) $(COBJECTS) $(LIBS) $(LINKFLAGS)
+		${CPLUS} ${LINKOPTIONS}  $@ client.o $(CPLUSOBJECTS) $(COBJECTS) $(LIBS) $(LINKFLAGS)
 
 server:		server.o $(CPLUSOBJECTS) $(COBJECTS)
-		${CC} ${LINKOPTIONS} $@ server.o $(CPLUSOBJECTS) $(COBJECTS) $(LIBS) $(LINKFLAGS)
+		${CPLUS} ${LINKOPTIONS} $@ server.o $(CPLUSOBJECTS) $(COBJECTS) $(LIBS) $(LINKFLAGS)
 
 
-.cc.o:	$(HEADERS)
+.cpp.o:	$(HEADERS)
 	$(CPLUS) $(CPLUSFLAGS) $(OPTIONS) $<
 
 .c.o:	$(HEADERS)

@@ -39,7 +39,10 @@ typedef struct burst_protocol_header_st {
     uint32_t burst_len;
 } burst_protocol_header_t;
 
-void DieWithError(char *errorMessage);  /* External error handling function */
+void DieWithError(char *errorMessage) {
+	fprintf(stderr, "%s: %s\n", errorMessage, strerror(errno));
+	exit(1);
+}
 
 int stopping = 0;
 

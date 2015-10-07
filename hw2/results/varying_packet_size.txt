@@ -1,0 +1,90 @@
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 2 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:   530/ 1000 received ( 47.00% loss),    33920 bytes total ( 20.55 MB/s),   278 messages (   17792 bytes) buffer size
+burst   2:   556/ 1250 received ( 55.52% loss),    35584 bytes total (  8.32 MB/s),   278 messages (   17792 bytes) buffer size
+burst   3:   796/ 1562 received ( 49.04% loss),    50944 bytes total (  6.40 MB/s),   796 messages (   50944 bytes) buffer size
+burst   4:   898/ 1952 received ( 54.00% loss),    57472 bytes total (  6.18 MB/s),   898 messages (   57472 bytes) buffer size
+burst   5:  1077/ 2440 received ( 55.86% loss),    68928 bytes total (  6.30 MB/s),  1077 messages (   68928 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 9.55 MB/s. (stddev = 6.21)
+Sample mean of the bottleneck buffer size is: 42585.60 bytes. (stddev = 23531.02)
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 66 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:  1000/ 1000 received (  0.00% loss),   128000 bytes total ( 17.67 MB/s),  1000 messages (  128000 bytes) buffer size
+burst   2:   934/ 1250 received ( 25.28% loss),   119552 bytes total ( 16.01 MB/s),   430 messages (   55040 bytes) buffer size
+burst   3:   492/ 1562 received ( 68.50% loss),    62976 bytes total ( 11.54 MB/s),   492 messages (   62976 bytes) buffer size
+burst   4:  1237/ 1952 received ( 36.63% loss),   158336 bytes total ( 14.17 MB/s),  1237 messages (  158336 bytes) buffer size
+burst   5:   735/ 2440 received ( 69.88% loss),    94080 bytes total ( 10.60 MB/s),   735 messages (   94080 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 14.00 MB/s. (stddev = 2.97)
+Sample mean of the bottleneck buffer size is: 99686.40 bytes. (stddev = 43628.61)
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 194 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:  1000/ 1000 received (  0.00% loss),   256000 bytes total ( 34.34 MB/s),  1000 messages (  256000 bytes) buffer size
+burst   2:   791/ 1250 received ( 36.72% loss),   202496 bytes total ( 27.41 MB/s),   189 messages (   48384 bytes) buffer size
+burst   3:   514/ 1562 received ( 67.09% loss),   131584 bytes total ( 26.00 MB/s),   167 messages (   42752 bytes) buffer size
+burst   4:  1028/ 1952 received ( 47.34% loss),   263168 bytes total ( 25.29 MB/s),  1028 messages (  263168 bytes) buffer size
+burst   5:   837/ 2440 received ( 65.70% loss),   214272 bytes total ( 21.14 MB/s),   837 messages (  214272 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 26.84 MB/s. (stddev = 4.80)
+Sample mean of the bottleneck buffer size is: 164915.20 bytes. (stddev = 110554.87)
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 450 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:  1000/ 1000 received (  0.00% loss),   512000 bytes total ( 69.54 MB/s),  1000 messages (  512000 bytes) buffer size
+burst   2:   343/ 1250 received ( 72.56% loss),   175616 bytes total ( 35.63 MB/s),   326 messages (  166912 bytes) buffer size
+burst   3:  1145/ 1562 received ( 26.70% loss),   586240 bytes total ( 55.60 MB/s),  1145 messages (  586240 bytes) buffer size
+burst   4:   400/ 1952 received ( 79.51% loss),   204800 bytes total ( 30.18 MB/s),   400 messages (  204800 bytes) buffer size
+burst   5:  1598/ 2440 received ( 34.51% loss),   818176 bytes total ( 61.54 MB/s),  1215 messages (  622080 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 50.50 MB/s. (stddev = 16.92)
+Sample mean of the bottleneck buffer size is: 418406.40 bytes. (stddev = 216383.88)
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 962 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:  1000/ 1000 received (  0.00% loss),  1024000 bytes total (129.26 MB/s),  1000 messages ( 1024000 bytes) buffer size
+burst   2:   642/ 1250 received ( 48.64% loss),   657408 bytes total ( 90.39 MB/s),   196 messages (  200704 bytes) buffer size
+burst   3:   375/ 1562 received ( 75.99% loss),   384000 bytes total ( 61.00 MB/s),   375 messages (  384000 bytes) buffer size
+burst   4:  1010/ 1952 received ( 48.26% loss),  1034240 bytes total ( 97.21 MB/s),  1010 messages ( 1034240 bytes) buffer size
+burst   5:   817/ 2440 received ( 66.52% loss),   836608 bytes total ( 80.03 MB/s),   817 messages (  836608 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 91.58 MB/s. (stddev = 25.11)
+Sample mean of the bottleneck buffer size is: 695910.40 bytes. (stddev = 382237.82)
+jason@ubuntu:~/852/projects/hw2/bufferprobe$ ./client localhost 5000 5 1000000 1452 1000 0.25
+burst 0 sent, 1000 messages
+burst 1 sent, 1250 messages
+burst 2 sent, 1562 messages
+burst 3 sent, 1952 messages
+burst 4 sent, 2440 messages
+
+Total of 5 bursts sent, totalling 8204 messages
+burst   1:  1000/ 1000 received (  0.00% loss),  1514000 bytes total (233.25 MB/s),  1000 messages ( 1514000 bytes) buffer size
+burst   2:   636/ 1250 received ( 49.12% loss),   962904 bytes total (133.18 MB/s),    94 messages (  142316 bytes) buffer size
+burst   3:   480/ 1562 received ( 69.27% loss),   726720 bytes total (107.47 MB/s),   315 messages (  476910 bytes) buffer size
+burst   4:  1318/ 1952 received ( 32.48% loss),  1995452 bytes total (164.49 MB/s),   935 messages ( 1415590 bytes) buffer size
+burst   5:   823/ 2440 received ( 66.27% loss),  1246022 bytes total (123.93 MB/s),   275 messages (  416350 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 152.46 MB/s. (stddev = 49.70)
+Sample mean of the bottleneck buffer size is: 793033.20 bytes. (stddev = 627022.14)

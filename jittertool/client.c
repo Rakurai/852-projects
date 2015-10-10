@@ -112,7 +112,8 @@ int main(int argc, char *argv[])
 
         messages_sent += burst_len;
         bursts_sent++;
-        usleep(burst_delay);
+	if (burst_delay > 0)
+	        usleep(burst_delay);
     }
 
     printf("\ntotal of %d bursts sent, totalling %d messages\n", bursts_sent, messages_sent);

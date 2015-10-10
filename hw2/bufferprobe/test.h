@@ -11,11 +11,11 @@ public:
 		payload_len(plen),
 		timestamp()
 	{
-		gettimeofday(&timestamp, NULL);
+		timestamp.mark();
 	}
 
 	unsigned int payload_len;
-	struct timeval timestamp;
+	Time timestamp;
 };
 
 class BurstData {

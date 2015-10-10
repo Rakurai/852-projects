@@ -13,66 +13,81 @@ public:
 	BurstResults(const BurstData &burst) :
 		num_sent(burst.len()),
 		num_received(),
-		bytes_received(),
+		payload_len(),
 		time_overall(),
 		num_contiguous(),
-		bytes_contiguous(),
-		time_contiguous()
+		time_contiguous(),
+		time_shortest()
 	{
-		struct timeval first_timestamp = {0, 0};
-		struct timeval last_timestamp;
+		Time first_timestamp;
+		Time last_timestamp;
+		Time shortest_difference;
 		bool found_dropped = false;
 
 		for (unsigned int seq_num = 0; seq_num < num_sent; seq_num++) {
 			try {
 				const ProbeData& probe = burst[seq_num]; // throws out of range
 
-				if (first_timestamp.tv_sec == 0) {
-					first_timestamp.tv_sec = probe.timestamp.tv_sec;
-					first_timestamp.tv_usec = probe.timestamp.tv_usec;
+				if (first_timestamp.sec() == 0) {
+					first_timestamp = probe.timestamp;
+					payload_len = probe.payload_len;
 				}
 
-				last_timestamp.tv_sec = probe.timestamp.tv_sec;
-				last_timestamp.tv_usec = probe.timestamp.tv_usec;
+				if (last_timestamp.sec() != 0) {
+					Time difference = probe.timestamp - last_timestamp;
+					if (time_shortest.toFloat() == 0 || difference < time_shortest)
+						time_shortest = difference;
+				}
 
-				// size of an ethernet frame + ip + udp with this payload
-				int packet_len = probe.payload_len + sizeof(Header) + 42;
-				bytes_received += packet_len;
+				last_timestamp = probe.timestamp;
+
 				num_received++;
 
 				if (!found_dropped) {
-					bytes_contiguous += packet_len;
 					num_contiguous++;
 				}
+
 			}
 			catch (std::out_of_range &e) {
 				if (!found_dropped)
-					timeval_subtract(&time_contiguous, last_timestamp, first_timestamp);
+					time_contiguous = last_timestamp - first_timestamp;
 
 				found_dropped = true;
 				continue;
 			}
 		}
 
-		timeval_subtract(&time_overall, last_timestamp, first_timestamp);
+		time_overall = last_timestamp - first_timestamp;
 	}
 
 	float loss() const {
+		if (num_sent == 0)
+			return 0;
 		return (float)(num_sent - num_received)/num_sent;
 	}
+	int packet_size() const {
+		return payload_len + sizeof(Header) + 42;
+	}
 	float rate() const {
-		return (float)bytes_received
-		 / (1000000 * time_overall.tv_sec + time_overall.tv_usec);
+		if (time_overall.toFloat() == 0)
+			return 0;
+		return (num_received * packet_size())
+		 / (1000000 * time_overall.toFloat());
+	}
+	float peak() const {
+		if (time_shortest.toFloat() == 0)
+			return 0;
+		return packet_size() / (1000000 * time_shortest.toFloat());
 	}
 
 	unsigned int num_sent;
 	unsigned int num_received;
-	unsigned int bytes_received;
-	struct timeval time_overall;
+	unsigned int payload_len;
+	Time time_overall;
 
 	unsigned int num_contiguous;
-	unsigned int bytes_contiguous;
-	struct timeval time_contiguous;
+	Time time_contiguous;
+	Time time_shortest;
 };
 
 class TestResults {
@@ -124,15 +139,17 @@ std::ostream& operator<<(std::ostream& os, const BurstResults& results) {
 	os  << std::setw(5) << results.num_received << "/"
 		<< std::setw(5) << results.num_sent << " received ("
 		<< std::setw(6) << std::fixed << std::setprecision(2) << results.loss()*100 << "% loss), "
-		<< std::setw(8) << results.bytes_received << " bytes total ("
+		<< std::setw(8) << results.num_received * results.packet_size() << " bytes total ("
 		<< std::setw(6) << std::fixed << std::setprecision(2) << results.rate() << " MB/s), "
-		<< std::setw(5) << results.num_contiguous << " messages ("
-		<< std::setw(8) << results.bytes_contiguous << " bytes) buffer size";
+		<< std::setw(6) << std::fixed << std::setprecision(2) << results.peak() << " MB/s peak), "
+		<< "buffer size " << std::setw(5) << results.num_contiguous << " ("
+		<< std::setw(8) << results.num_contiguous * results.packet_size() << " bytes)";
 	return os;
 }
 
 
 std::ostream& operator<<(std::ostream& os, const TestResults& results) {
+	Stats peak;
 	Stats bandwidth;
 	Stats buffer_size;
 
@@ -140,15 +157,17 @@ std::ostream& operator<<(std::ostream& os, const TestResults& results) {
 		const BurstResults& burst = results[i];
 
 		if (burst.num_sent > 0) {
+			peak.addSample(burst.peak());
 			bandwidth.addSample(burst.rate());
-			buffer_size.addSample(burst.bytes_contiguous);
+			buffer_size.addSample(burst.num_received * burst.packet_size());
 		}
 
 		os << "burst " << std::setw(3) << i+1 << ": " << burst << std::endl;
 	}
 
-	os << "Sample mean of the bottleneck bandwidth is: " << bandwidth.mean() << " MB/s. (stddev = " << bandwidth.stddev() << ")" << std::endl;
-	os << "Sample mean of the bottleneck buffer size is: " << buffer_size.mean() << " bytes. (stddev = " << buffer_size.stddev() << ")" << std::endl;
+	os << "rate peak:   " << peak << std::endl;
+	os << "bandwidth:   " << bandwidth << std::endl;
+	os << "buffer size: " << buffer_size << std::endl;
 
     return os;
 }

@@ -1,0 +1,80 @@
+Sample mean of the bottleneck bandwidth is: 0.15 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 12670.00 bytes. (stddev = 520.70)
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 13104.40 bytes. (stddev = 3110.27)
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 14081.80 bytes. (stddev = 8023.55)
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 14950.60 bytes. (stddev = 12980.98)
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 15529.80 bytes. (stddev = 15945.96)
+burst   1:    12/  100 received ( 88.00% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   2:    12/  100 received ( 88.00% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   3:    12/  100 received ( 88.00% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   4:    12/  100 received ( 88.00% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   5:    12/  100 received ( 88.00% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.16 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 13032.00 bytes. (stddev = 0.00)
+burst   1:    27/  100 received ( 73.00% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   2:    27/  100 received ( 73.00% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   3:    27/  100 received ( 73.00% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   4:    27/  100 received ( 73.00% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   5:    27/  100 received ( 73.00% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 29322.00 bytes. (stddev = 0.00)
+burst   1:    52/  100 received ( 48.00% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   2:    52/  100 received ( 48.00% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   3:    52/  100 received ( 48.00% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   4:    52/  100 received ( 48.00% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   5:    52/  100 received ( 48.00% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 56472.00 bytes. (stddev = 0.00)
+burst   1:    77/  100 received ( 23.00% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   2:    77/  100 received ( 23.00% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   3:    77/  100 received ( 23.00% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   4:    77/  100 received ( 23.00% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   5:    77/  100 received ( 23.00% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 83622.00 bytes. (stddev = 0.00)
+burst   1:    92/  100 received (  8.00% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   2:    92/  100 received (  8.00% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   3:    92/  100 received (  8.00% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   4:    92/  100 received (  8.00% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   5:    92/  100 received (  8.00% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 99912.00 bytes. (stddev = 0.00)
+burst   1:    12/ 1000 received ( 98.80% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   2:    12/ 1000 received ( 98.80% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   3:    12/ 1000 received ( 98.80% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   4:    12/ 1000 received ( 98.80% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+burst   5:    12/ 1000 received ( 98.80% loss),    13032 bytes total (  0.16 MB/s),    12 messages (   13032 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.16 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 13032.00 bytes. (stddev = 0.00)
+burst   1:    27/ 1000 received ( 97.30% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   2:    27/ 1000 received ( 97.30% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   3:    27/ 1000 received ( 97.30% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   4:    27/ 1000 received ( 97.30% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+burst   5:    27/ 1000 received ( 97.30% loss),    29322 bytes total (  0.14 MB/s),    27 messages (   29322 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.14 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 29322.00 bytes. (stddev = 0.00)
+burst   1:    52/ 1000 received ( 94.80% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   2:    52/ 1000 received ( 94.80% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   3:    52/ 1000 received ( 94.80% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   4:    52/ 1000 received ( 94.80% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+burst   5:    52/ 1000 received ( 94.80% loss),    56472 bytes total (  0.13 MB/s),    52 messages (   56472 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 56472.00 bytes. (stddev = 0.00)
+burst   1:    77/ 1000 received ( 92.30% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   2:    77/ 1000 received ( 92.30% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   3:    77/ 1000 received ( 92.30% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   4:    77/ 1000 received ( 92.30% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+burst   5:    77/ 1000 received ( 92.30% loss),    83622 bytes total (  0.13 MB/s),    77 messages (   83622 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 83622.00 bytes. (stddev = 0.00)
+burst   1:    92/ 1000 received ( 90.80% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   2:    92/ 1000 received ( 90.80% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   3:    92/ 1000 received ( 90.80% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   4:    92/ 1000 received ( 90.80% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+burst   5:    92/ 1000 received ( 90.80% loss),    99912 bytes total (  0.13 MB/s),    92 messages (   99912 bytes) buffer size
+Sample mean of the bottleneck bandwidth is: 0.13 MB/s. (stddev = 0.00)
+Sample mean of the bottleneck buffer size is: 99912.00 bytes. (stddev = 0.00)

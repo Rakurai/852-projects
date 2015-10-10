@@ -1,0 +1,40 @@
+burst   1:    77/  100 received ( 23.00% loss),    78848 bytes total (  0.13 MB/s),  20.48 MB/s peak), buffer size    77 (   78848 bytes)
+burst   2:    44/  100 received ( 56.00% loss),    45056 bytes total (  0.13 MB/s),   0.15 MB/s peak), buffer size    44 (   45056 bytes)
+burst   3:    33/  100 received ( 67.00% loss),    33792 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    33 (   33792 bytes)
+burst   4:    31/  100 received ( 69.00% loss),    31744 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    31 (   31744 bytes)
+burst   5:    27/  100 received ( 73.00% loss),    27648 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    27 (   27648 bytes)
+rate peak:   count= 5  min= 0.14  max= 20.48  mean= 4.21  stddev= 9.10
+bandwidth:   count= 5  min= 0.13  max= 0.13  mean= 0.13  stddev= 0.00
+buffer size: count= 5  min= 27648.00  max= 78848.00  mean= 43417.60  stddev= 20830.28
+burst   1:    48/  100 received ( 52.00% loss),    49152 bytes total (  0.13 MB/s),   0.15 MB/s peak), buffer size    48 (   49152 bytes)
+burst   2:    35/  100 received ( 65.00% loss),    35840 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    35 (   35840 bytes)
+burst   3:    31/  100 received ( 69.00% loss),    31744 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    31 (   31744 bytes)
+burst   4:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+burst   5:    28/  100 received ( 72.00% loss),    28672 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    28 (   28672 bytes)
+rate peak:   count= 5  min= 0.14  max= 0.15  mean= 0.14  stddev= 0.00
+bandwidth:   count= 5  min= 0.13  max= 0.13  mean= 0.13  stddev= 0.00
+buffer size: count= 5  min= 28672.00  max= 49152.00  mean= 35020.80  stddev= 8363.01
+burst   1:    48/  100 received ( 52.00% loss),    49152 bytes total (  0.13 MB/s),   0.15 MB/s peak), buffer size    48 (   49152 bytes)
+burst   2:    35/  100 received ( 65.00% loss),    35840 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    35 (   35840 bytes)
+burst   3:    31/  100 received ( 69.00% loss),    31744 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    31 (   31744 bytes)
+burst   4:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+burst   5:    28/  100 received ( 72.00% loss),    28672 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    28 (   28672 bytes)
+rate peak:   count= 5  min= 0.14  max= 0.15  mean= 0.14  stddev= 0.00
+bandwidth:   count= 5  min= 0.13  max= 0.13  mean= 0.13  stddev= 0.00
+buffer size: count= 5  min= 28672.00  max= 49152.00  mean= 35020.80  stddev= 8363.01
+burst   1:    48/  100 received ( 52.00% loss),    49152 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    48 (   49152 bytes)
+burst   2:    35/  100 received ( 65.00% loss),    35840 bytes total (  0.13 MB/s),   0.15 MB/s peak), buffer size    35 (   35840 bytes)
+burst   3:    30/  100 received ( 70.00% loss),    30720 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    30 (   30720 bytes)
+burst   4:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+burst   5:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+rate peak:   count= 5  min= 0.14  max= 0.15  mean= 0.14  stddev= 0.00
+bandwidth:   count= 5  min= 0.13  max= 0.13  mean= 0.13  stddev= 0.00
+buffer size: count= 5  min= 29696.00  max= 49152.00  mean= 35020.80  stddev= 8300.09
+burst   1:    48/  100 received ( 52.00% loss),    49152 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    48 (   49152 bytes)
+burst   2:    35/  100 received ( 65.00% loss),    35840 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    35 (   35840 bytes)
+burst   3:    30/  100 received ( 70.00% loss),    30720 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    30 (   30720 bytes)
+burst   4:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+burst   5:    29/  100 received ( 71.00% loss),    29696 bytes total (  0.13 MB/s),   0.14 MB/s peak), buffer size    29 (   29696 bytes)
+rate peak:   count= 5  min= 0.14  max= 0.14  mean= 0.14  stddev= 0.00
+bandwidth:   count= 5  min= 0.13  max= 0.13  mean= 0.13  stddev= 0.00
+buffer size: count= 5  min= 29696.00  max= 49152.00  mean= 35020.80  stddev= 8300.09

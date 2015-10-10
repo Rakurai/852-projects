@@ -52,4 +52,14 @@ private:
 	double _m2;
 };
 
+std::ostream& operator<<(std::ostream& os, const Stats& s) {
+	os <<
+		"count= " << s.count() <<
+		"  min= " << s.min() <<
+		"  max= " << s.max() <<
+		"  mean= " << s.mean() <<
+		"  stddev= " << s.stddev();
+	return os;
+}
+
 #endif // __STATS_H

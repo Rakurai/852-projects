@@ -6,6 +6,7 @@
 #include <arpa/inet.h>  /* for sockaddr_in and inet_addr() */
 #include <string.h>
 #include <stdexcept>
+#include <linux/net_tstamp.h>
 
 #include "message.h"
 #include "signalhandler.h"
@@ -101,17 +102,77 @@ public:
 		}
 	}
 
-private:
-	void init() {
-		_sock = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
+protected:
+	struct sockaddr_in _address;
+	int _sock;
+	AlarmInterrupter _alarm;
+
+	virtual void init() {
+		_sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 
 		if (_sock < 0)
 			throw std::runtime_error(std::string("UDPSocket::socket(): ") + strerror(errno));
 	}
+};
 
-	struct sockaddr_in _address;
-	int _sock;
-	AlarmInterrupter _alarm;
+class TimestampingUDPSocket : public UDPSocket {
+public:
+	TimestampingUDPSocket(unsigned short int port) :
+		UDPSocket(port)
+	{
+		init();
+	}
+
+
+	void send(const Message &message) const {
+		UDPSocket::send(message);
+
+        char data[256];
+        struct msghdr msg;
+        struct iovec entry;
+        struct sockaddr_in from_addr;
+        struct {
+            struct cmsghdr cm;
+            char control[512];
+        } control;
+        int res;
+
+        memset(&msg, 0, sizeof(msg));
+        msg.msg_iov = &entry;
+        msg.msg_iovlen = 1;
+        entry.iov_base = data;
+        entry.iov_len = sizeof(data);
+        msg.msg_name = (caddr_t)&from_addr;
+        msg.msg_namelen = sizeof(from_addr);
+        msg.msg_control = &control;
+        msg.msg_controllen = sizeof(control);
+
+		fd_set readset;
+		int result;
+		do {
+			FD_ZERO(&readset);
+			FD_SET(_sock, &readset);
+			result = select(_sock + 1, &readset, NULL, NULL, NULL);
+		} while (result == -1 && errno == EINTR);
+
+		if (result > 0) {
+			if (FD_ISSET(_sock, &readset)) {
+		        if (recvmsg(_sock, &msg, MSG_ERRQUEUE) < 0)
+					throw std::runtime_error(std::string("TimestampingUDPSocket::recvmsg(): ") + strerror(errno));
+std::cout << "here" << std::endl;
+
+	        }
+	    }
+		else
+			throw std::runtime_error(std::string("TimestampingUDPSocket::select(): ") + strerror(errno));
+	}
+
+private:
+	void init() {
+		int timestamp_flags = SOF_TIMESTAMPING_TX_SOFTWARE;
+		if (setsockopt(_sock, SOL_SOCKET, SO_TIMESTAMPING, &timestamp_flags, sizeof(timestamp_flags)) < 0)
+			throw std::runtime_error(std::string("TimestampingUDPSocket::setsockopt(): ") + strerror(errno));
+	}
 };
 
 #endif // __SOCKET_H

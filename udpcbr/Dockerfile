@@ -3,5 +3,4 @@ FROM ubuntu:trusty
 WORKDIR /
 
 ADD client /client
-
-ENTRYPOINT ["/client"]
+ADD server /server
